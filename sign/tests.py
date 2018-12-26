@@ -39,6 +39,5 @@ class  LoginActionTest(TestCase):
          test_data={'username':'admin','password':'admin123'}
          response=self.c.post('/login_action/',data=test_data)
          self.assertEqual(response.status_code,302)
-
          print('测试修改提交github')
 
